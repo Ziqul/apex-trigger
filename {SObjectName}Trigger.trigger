@@ -1,4 +1,5 @@
-trigger {SObjectName}Trigger on {SObjectName} (	before insert,
+trigger {SObjectName}Trigger on {SObjectName} (
+    before insert,
     before update,
     before delete,
     after insert,

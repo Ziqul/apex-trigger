@@ -1,4 +1,4 @@
-trigger {SObjectName}Trigger on {SObjectName} (
+trigger {{ object_name }}TriggerHandlerTrigger on {{ object_name }}TriggerHandler (
     before insert,
     before update,
     before delete,
@@ -7,5 +7,5 @@ trigger {SObjectName}Trigger on {SObjectName} (
     after delete,
     after undelete) {
 
-    new {SObjectName}TriggerHandler().manage();
+    new {{ object_name }}TriggerHandlerTriggerHandler().manage();
 }

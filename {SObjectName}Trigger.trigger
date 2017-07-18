@@ -5,6 +5,6 @@ trigger {SObjectName}Trigger on {SObjectName} (	before insert,
     after update,
     after delete,
     after undelete) {
-    
-	new {SObjectName}TriggerHandler().manage();
+
+    new {SObjectName}TriggerHandler().manage();
 }
